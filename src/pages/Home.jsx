@@ -40,7 +40,7 @@ const Home = () => {
               </p>
 
               <Link
-                to="/login"
+                to='/user-login'
                 className="group block w-full bg-black hover:bg-gray-900 transition-all duration-200 py-4 px-6 rounded-2xl text-center font-semibold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-black/20"
               >
                 <span className="group-hover:translate-x-1 transition-transform duration-200 text-white">
@@ -51,7 +51,7 @@ const Home = () => {
               {/* Secondary CTA */}
               <p className="mt-6 text-xs text-gray-500">
                 Don't have an account?{" "}
-                <Link to="/signup" className="text-black font-medium hover:underline">
+                <Link to='/user-signup' className="text-black font-medium hover:underline">
                   Sign up
                 </Link>
               </p>

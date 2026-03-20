@@ -1,26 +1,21 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import UserLogin from "./pages/UserLogin";
-import UserSignUp from "./pages/UserSignUp";
-import CaptainLogin from "./pages/CaptainLogin";
+import Home from "./pages/home";
+import Userlogin from "./pages/userlogin";
+import UserSignUp from "./pages/usersignup";
+import CaptainLogin from "./pages/captainlogin";
 import CaptainSignUp from "./pages/CaptainSignUp";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-         <Route path='/login' element={<UserLogin />}/>
-        <Route path='/signup' element={<UserSignUp/>}/>
-        <Route path='/CaptainLogin' element={<CaptainLogin/>}/>
-        <Route path='/CaptainSignUp' element={<CaptainSignUp/>}/>
-      </Routes>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/user-login" element={<Userlogin />} />
+      <Route path="/user-signup" element={<UserSignUp />} />
+      <Route path="/captain-login" element={<CaptainLogin />} />
+      <Route path="/captain-signup" element={<CaptainSignUp />} />
+    </Routes>
+  );
 }
 
-export default App
-
-
+export default App;

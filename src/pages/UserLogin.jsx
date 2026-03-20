@@ -62,7 +62,7 @@ setPassword(e.target.value);
         {/* Signup */}
         <p className="text-sm text-gray-600 text-center">
           New here?{" "}
-          <Link to="/signup" className="text-blue-600 font-medium">
+          <Link to="/user-signup" className="text-blue-600 font-medium">
             Create new Account
           </Link>
         </p>
@@ -71,7 +71,7 @@ setPassword(e.target.value);
       {/* 🔽 BOTTOM SECTION */}
       <div>
         <Link
-        to='CaptainLogin'
+        to='/captain-login'
          className="w-full flex items-center justify-center bg-green-500 text-white py-3 rounded-md font-semibold hover:bg-green-600 transition">
           Sign in as Captain
         </Link>
